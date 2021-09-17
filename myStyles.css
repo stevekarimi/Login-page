@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+
+/* styling the header by way of using its assigned class */
+.head{
+    
+    position: sticky;
+    height: 49px;
+    width: 100%;
+    background-color: transparent;
+     
+}
+
+/* styling the heading within the head */
+h2{
+    margin: 0px 0px;
+    color: slategrey;
+    text-align: center;
+    font-size: xx-large;
+    padding: 5px;
+}
+
+/* styling the heading within the div */
+div h2{
+    background-color: white;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    float: left;
+    font-style: oblique;
+}
+/* styling the search parameters */
+/* positions the search bar to the right of the page by floating it */
+.search{
+    float: right;
+    top: 0;
+}
+
+/* styling the search textarea*/
+#Search{
+    border-radius: 20px;
+}
+
+/* styling the search button */
+.searchBtn{
+    height: 25px;
+    border-radius: 20px;
+    background-color: cyan;
+}
+
+/* styling the navigation bar */
+/* list-style-type propery removes the link bullets */
+/* both margin and padding removes browser default settings */
+/* backgound color helps style the entire list and not the links individually */
+/* height specifies the nav bar thickness */
+/* display property with the flex attribute places the links in columns  */
+ul{
+    list-style-type:none;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(107, 7, 7);
+    height: 31px;
+    display: flex;
+    width: 100%;
+    position:sticky;
+    
+}
+
+/* styling the list items removing the line breaks before and 
+after each list item, to display them on one line */
+/* Add a gray right border to all list items, except the last item  */
+li{
+    display:inline;
+    border-right: 1px solid #bbb; 
+      
+}
+
+/* styling the links with a different color */
+/* Removing of the underline with the text decoration */
+/* adding padding makes the links look more presentable */
+li a{
+    color: white;
+    display: block;
+    font-size: large;
+    text-decoration: none;
+    text-align:center;
+    padding: 5px;    
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+  }
+
+/* styling the form  */
+/* including a form border */
+/* Adding of a height and width attributes to the form to
+ ensure responsiveness*/
+/* adding a boder radius for presentability */
+/*  centers the form horizontally using CSS margin */
+/* padding makes the form content look presentable */
+.Center-form{
+    border: 2px solid black;
+    height: 60%;
+    border-radius: 5%;
+    padding: 50px;
+    width: 400px;
+	margin: 0 auto;
+    background-color: whitesmoke;
+    
+
+}
+
+/* styling the button response on mouse hover */
+button:hover{
+    opacity: 0.5;
+}
+
+/* styling the paragragh within the form */
+.Center-form p{
+    text-align: center;
+}
+
+/* styling the entire body section */
+/* To have the background as an image */
+/* For the background image to 
+cover the entire element, I set the background-
+size property to cover. */
+/* To make sure the entire element to remain covered, 
+the background attachment has to be fixed */
+/* To avoid the background image from repeating itself, 
+set background property to no-repeat */
+body{ 
+    background-color: cyan;
+    background-image: url(images/bkground-img2.jpg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+} 
+
+/* styling the labels, the textbox and the password box */
+input[type="text"]  {
+    width: 100%;
+    height: 25px;
+    display: block;
+    border-radius: 20px;
+    
+}
+/* styling the labels, the textbox and the password box */
+input[type="Password"]  {
+    width: 100%;
+    height: 25px;
+    display: block;
+    border-radius: 20px;
+    
+}
+
+/* styling the submit button */
+.submit{
+    align-content: center;
+    background-color: cyan;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+
+/* styling the sign up button */
+.signUp{
+    background-color: cyan;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    margin: 10px;
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+/* styling the footer to remain at the center and bottom of the page */
+.footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+/* styling the contact icons */
+.Contacts{
+    display: flexbox;
+    float: right;
+    margin: 2px;
+    font-size: 25px;
+}
